@@ -21,12 +21,11 @@ The ***server listens on port 8080***.
 ## Function Descriptions
 `"apiCotacao"`: This function makes a GET request to an API endpoint to get the exchange rate and returns it as a struct.
 `"insertCotacao"`: This function stores the exchange rate in the SQLite database.
-
 `"main"`: This is the entry point of the program. It opens a connection to the database, calls the `"apiCotacao"` and `"insertCotacao"` functions, creates an HTTP endpoint, and starts the server.
 
 ### Note
 The SQLite database and its table need to be set up before running the code.
-The API endpoint used in the code is "https://economia.awesomeapi.com.br/json/last/USD-BRL", which may not be available in the future.
+The API endpoint used in the code is "[awesomeapi](https://economia.awesomeapi.com.br/json/last/USD-BRL)", which may not be available in the future.
 
 
 
